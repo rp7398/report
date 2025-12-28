@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real-Time Fraud Detection System | MSc Data Science Project</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      color: #60a5fa;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .card {
+      background: #020617;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 20px 0;
+      border: 1px solid #1e293b;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .tech span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 6px 12px;
+      margin: 6px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #020617;
+      padding: 30px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Real-Time Fraud Detection System</h1>
+  <p>MSc Data Science Capstone Project | End-to-End ML & MLOps Platform</p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>📌 Project Overview</h2>
+    <p>
+      This project implements a <strong>production-grade real-time fraud detection system</strong>
+      designed to identify fraudulent financial transactions using machine learning and MLOps
+      best practices.
+    </p>
+    <p>
+      Unlike academic-only ML projects, this system focuses on the <strong>entire lifecycle</strong>:
+      data ingestion, preprocessing, model training, deployment, automation, and monitoring readiness.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🎯 Objectives</h2>
+    <ul>
+      <li>Detect fraudulent transactions with high precision</li>
+      <li>Handle large-scale, highly imbalanced datasets</li>
+      <li>Separate experimentation from production code</li>
+      <li>Deploy ML models as real-time REST APIs</li>
+      <li>Automate ML workflows using CI/CD</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📊 Dataset</h2>
+    <ul>
+      <li><strong>Source:</strong> Kaggle Credit Card Transaction Dataset</li>
+      <li><strong>Files:</strong> fraudTrain.csv, fraudTest.csv</li>
+      <li><strong>Target Variable:</strong> is_fraud</li>
+      <li><strong>Key Challenge:</strong> Extreme class imbalance</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🔬 Exploratory Data Analysis (EDA)</h2>
+    <ul>
+      <li>Fraud vs non-fraud distribution analysis</li>
+      <li>Transaction amount distribution & outliers</li>
+      <li>Log-scaled visualizations for skewed data</li>
+      <li>Feature relevance exploration</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🧠 Feature Engineering & Modeling</h2>
+    <ul>
+      <li>Encoding of high-cardinality categorical variables</li>
+      <li>Numerical feature scaling</li>
+      <li>Class imbalance handling using weighted models</li>
+      <li>Random Forest selected for robustness & interpretability</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🌐 Real-Time Prediction API</h2>
+    <ul>
+      <li>Flask-based REST API</li>
+      <li>Health endpoint for service monitoring</li>
+      <li>Prediction endpoint for fraud probability</li>
+      <li>Model loaded dynamically at runtime</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🐳 Docker & Deployment</h2>
+    <ul>
+      <li>Fully containerized application</li>
+      <li>Environment consistency across systems</li>
+      <li>Production-ready Dockerfile</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🤖 CI/CD with Jenkins</h2>
+    <ul>
+      <li>Automated code checkout from GitHub</li>
+      <li>ETL pipeline execution</li>
+      <li>Model training & evaluation</li>
+      <li>Docker image build & deployment</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🛠️ Technology Stack</h2>
+    <div class="tech">
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>Scikit-learn</span>
+      <span>Flask</span>
+      <span>Docker</span>
+      <span>Jenkins</span>
+      <span>GitHub</span>
+      <span>Jupyter Notebook</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🎓 Academic & Industry Relevance</h2>
+    <p>
+      This project was developed as part of an <strong>MSc Data Science capstone</strong> and
+      demonstrates strong alignment with <strong>industry ML engineering and MLOps practices</strong>.
+    </p>
+    <p>
+      It emphasizes building <strong>ML systems</strong>, not just ML models.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🚀 Future Enhancements</h2>
+    <ul>
+      <li>Real-time streaming with Kafka</li>
+      <li>Model drift detection & monitoring</li>
+      <li>Automated retraining pipelines</li>
+      <li>Cloud deployment (AWS / GCP)</li>
+    </ul>
+  </div>
+
+</section>
+
+<footer>
+  <p>
+    Developed by <strong>Rajat Pathak</strong> | MSc Data Science  
+    <br/>
+    <a href="https://github.com/rp7398/real-time-fraud-detection-mlops" target="_blank">GitHub Repository</a>
+  </p>
+</footer>
+
+</body>
+</html>
